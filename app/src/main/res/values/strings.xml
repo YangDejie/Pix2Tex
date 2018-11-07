@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pix2Tex</string>
+    <string name="slogan">Picture to</string>
+    <string name="login"><u>Login</u></string>
+</resources>
