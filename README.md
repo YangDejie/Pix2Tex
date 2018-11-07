@@ -1,6 +1,6 @@
-# Pix2Tex 
+# Pix2Tex
 
-:soon: An Android application for transforming picture to *Latex*
+come​ :soon:: ​ An Android application for transforming picture to *Latex* 
 
 ## Features
 
@@ -12,4 +12,3 @@
 ## Reference
 
 - 
-

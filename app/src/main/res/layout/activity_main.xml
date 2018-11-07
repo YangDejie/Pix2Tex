@@ -4,11 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background_gradient"
     tools:context=".activities.MainActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="main"
-    android:textColor="#fff"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabSelectedTextColor="#fff"
+        app:tabTextColor="#9961e1"
+        android:background="@drawable/background_menu"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_history"
+            android:text="History" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_camera"
+            android:icon="@drawable/ic_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/item_person"
+            android:icon="@drawable/ic_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile" />
+    </android.support.design.widget.TabLayout>
 </LinearLayout>
